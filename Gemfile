@@ -3,8 +3,10 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.7.0"
 
+gem "bcrypt", "3.1.13"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "bootstrap-sass", "3.4.1"
+gem "config"
 gem "jbuilder", "~> 2.7"
 gem "puma", "~> 4.1"
 gem "rails", "~> 6.0.4", ">= 6.0.4.6"
@@ -13,7 +15,6 @@ gem "sass-rails", ">= 6"
 gem "sqlite3", "~> 1.4"
 gem "turbolinks", "~> 5"
 gem "webpacker", "~> 4.0"
-gem "config"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
