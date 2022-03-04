@@ -2,12 +2,18 @@ vi:
   base_title: "Ứng dụng mẫu với Ruby on Rails"
   rails_tutorial_name: "Hướng dẫn Ruby on Rails"
   ruby_on_rails: "Ruby on Rails"
+
   layouts:
     header:
       logo: "Sample App"
       home: "Trang chủ"
       help: "Trợ giúp"
       log_in: "Đăng nhập"
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Trang cá nhân"
+      settings: "Cài đặt"
+      log_out: "Đăng xuất"
     footer:
       tutorial_author: "bởi Michael Hartl"
       about: "Thông tin"
@@ -15,6 +21,7 @@ vi:
       news: "Tin tức"
       en: "Tiếng Anh"
       vi: "Tiếng Việt"
+
   static_pages:
     home:
       title: "Trang chủ"
@@ -39,13 +46,14 @@ vi:
       help_link: "tại đây"
       second_intro: "Nhận hỗ trợ về ứng dụng mẫu, xem tại"
       book_link: "Sách Hướng dẫn Ruby on Rails"
+
   users:
     new:
       title: "Đăng ký"
       welcome: "Đăng ký"
       success_message: "Chào mừng đến với Ứng dụng mẫu!"
       failure_message: "Đăng ký nguời dùng thất bại"
-
+      submit: "Tạo tài khoản"
     not_found: "Không tìm thấy người dùng"
 
   shared:
@@ -59,3 +67,12 @@ vi:
         name: "Tên"
         password: "Mật khẩu"
         password_confirmation: "Mật khẩu xác nhận"
+
+  sessions:
+    new:
+      title: "Đăng nhập"
+      welcome: "Đăng nhập"
+      submit: "Đăng nhập"
+      new_user_question: "Người dùng mới?"
+      failure_message: "Sai email hoặc mật khẩu"
+      password_label: "Mật khẩu"
