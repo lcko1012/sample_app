@@ -74,3 +74,4 @@ en:
       new_user_question: "New user?"
       failure_message: "Invalid email/password combination"
       password_label: "Password"
+      remember_me: "Remember me on this computer"

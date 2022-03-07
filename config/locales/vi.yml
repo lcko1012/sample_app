@@ -76,3 +76,4 @@ vi:
       new_user_question: "Người dùng mới?"
       failure_message: "Sai email hoặc mật khẩu"
       password_label: "Mật khẩu"
+      remember_me: "Ghi nhớ tôi trên thiết bị này"
