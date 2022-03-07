@@ -2,10 +2,13 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    user = User.find_by email: params[:session][:email].downcase
+    email, password, remember_me = params[:session].values_at(:email, :password,
+                                                              :remember_me)
+    user = User.find_by email: email.downcase
 
-    if user&.authenticate(params[:session][:password])
+    if user&.authenticate password
       log_in user
+      remember_me == "1" ? remember(user) : forget(user)
       redirect_to user
     else
       flash.now[:danger] = t "sessions.new.failure_message"
