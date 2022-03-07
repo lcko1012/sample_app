@@ -19,3 +19,4 @@ digits:
 gravatar:
   url: "https://secure.gravatar.com/avatar"
   default_size: 80
+  users_size: 50
