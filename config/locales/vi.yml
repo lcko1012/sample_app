@@ -60,6 +60,8 @@ vi:
       success_message: "Chào mừng đến với Ứng dụng mẫu!"
       failure_message: "Đăng ký nguời dùng thất bại"
       submit: "Tạo tài khoản"
+    create:
+      mail_activation_message: "Hãy kiểm tra email của bạn để kích hoạt tài khoản"
     edit:
       title: "Chỉnh sửa người dùng"
       welcome: "Cập nhật thông tin của bạn"
@@ -94,3 +96,18 @@ vi:
       failure_message: "Sai email hoặc mật khẩu"
       password_label: "Mật khẩu"
       remember_me: "Ghi nhớ tôi trên thiết bị này"
+    create:
+      unactivated_message: "Tài khoản chưa kích hoạt. Vui lòng kiểm tra email"
+      failure_message: "Sai email hoặc mật khẩu"
+
+  account_activations:
+    edit:
+      success_message: "Đã kích hoạt tài khoản!"
+      failure_message: "Liên kết không hợp lệ"
+
+  user_mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      greeting: "Xin chào"
+      body: "Chào mừng bạn đến với Ứng dụng mẫu. Hãy nhấp vào đường truy cập bên dưới để kích hoạt tài khoản nhé:"
+      activate_link: "Kích hoạt"

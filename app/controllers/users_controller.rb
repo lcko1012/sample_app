@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :admin_user?, only: :destroy
 
   def index
-    @pagy, @users = pagy(User.all)
+    @pagy, @users = pagy User.where(activated: true)
   end
 
   def show; end
@@ -18,9 +18,9 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      log_in @user
-      flash[:success] = t ".new.success_message"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".mail_activation_message"
+      redirect_to root_url
     else
       flash.now[:danger] = t ".new.failure_message"
       render :new
@@ -35,7 +35,7 @@ class UsersController < ApplicationController
       redirect_to @user
     else
       flash.now[:danger] = t ".edit.failure_message"
-      render "edit"
+      render :edit
     end
   end
 
@@ -72,10 +72,10 @@ class UsersController < ApplicationController
 
   def find_user
     @user = User.find_by id: params[:id]
-    return if @user
+    return if @user&.activated
 
     flash[:danger] = t ".not_found"
-    edirect_to path_root
+    redirect_to root_path
   end
 
   def admin_user?
