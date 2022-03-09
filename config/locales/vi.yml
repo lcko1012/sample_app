@@ -95,6 +95,7 @@ vi:
       new_user_question: "Người dùng mới?"
       failure_message: "Sai email hoặc mật khẩu"
       password_label: "Mật khẩu"
+      forgot_password: "(Quên mật khẩu)"
       remember_me: "Ghi nhớ tôi trên thiết bị này"
     create:
       unactivated_message: "Tài khoản chưa kích hoạt. Vui lòng kiểm tra email"
@@ -111,3 +112,29 @@ vi:
       greeting: "Xin chào"
       body: "Chào mừng bạn đến với Ứng dụng mẫu. Hãy nhấp vào đường truy cập bên dưới để kích hoạt tài khoản nhé:"
       activate_link: "Kích hoạt"
+    password_reset:
+      subject: "Lấy lại mật khẩu"
+      first_sentence: "Để có thể cập nhật lại mật khẩu của bạn, hãy nhấp vào đường dẫn bên dưới"
+      reset_link: "Cập nhật lại mật khẩu"
+      second_sentence: "Đường dẫn này có hạn trong vòng %{time} "
+      hour: "tiếng"
+      third_sentence: "Nếu bạn không yêu cầu lấy lại mật khẩu, thì hãy phớt lờ email này và mật khẩu của bạn vẫn như cũ."
+
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      welcome: "Quên mật khẩu"
+      submit: "Gửi"
+    create:
+      success_message: "Vui lòng kiểm tra email để lấy lại mật khẩu"
+      failure_message: "Không tìm thấy địa chỉ email"
+    edit:
+      title: "Cập nhật lại mật khẩu"
+      welcome: "Cập nhật lại mật khẩu"
+      submit: "Cập nhật mật khẩu"
+    update:
+      empty_password: "không thể để trống"
+      successful_reset: "Mật khẩu đã được cập nhật lại."
+      something_wrong: "Đã có lỗi gì đó xảy ra. Vui lòng thử lại sau"
+    expired_reset: "Đã quá hạn lấy lại mật khẩu"
+    invalid_link: "Đường dẫn không đúng"
